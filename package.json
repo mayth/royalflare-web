@@ -1,0 +1,32 @@
+{
+  "name": "royalflare-web",
+  "version": "1.0.0",
+  "description": "personal library management tool (web module)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "rollup": "rollup -i src/js/app.js -o lib/app.umd.js -f umd",
+    "build": "npm run tsc && npm run rollup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayth/royalflare-web.git"
+  },
+  "author": "Mei Akizuru <chimeaquas@hotmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mayth/royalflare-web/issues"
+  },
+  "homepage": "https://github.com/mayth/royalflare-web#readme",
+  "dependencies": {
+    "quagga": "^0.12.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/preset-typescript": "^7.0.0-beta.47",
+    "tslint": "^5.10.0"
+  }
+}
